@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./wallpaperbetter.com_1920x1080.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:800px;
+    background-attachment: fixed;
+    background-color: #060709;
+}
+
+.container {
+    width: 30rem;
+    height: 20rem;
+    margin: 15rem auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(224, 215, 215);
+    box-shadow: 2px 2px 5px 5px grey;
+    border-radius: 10%;
+    padding: 2rem;
+}
+.form {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px;
+}
+
+
+#boy,
+#kilo {
+    width: 70%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+#hesap {
+    width: 60%;
+    height: 60%;
+    background-color: orangered;
+    /* padding: 10px; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bilgi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
