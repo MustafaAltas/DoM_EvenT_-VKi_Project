@@ -7,7 +7,13 @@ window.addEventListener("load", (event) => {
   document.getElementById("icerik").style.display = "none";
 });
 
+btn.addEventListener("click", yenilenme);
 btn.addEventListener("click", hesap);
+
+function yenilenme(event) {
+  document.getElementById("icerik_başlık").innerHTML = " ";
+  document.getElementById("icerik_bilgi").innerHTML = " ";
+}
 
 function hesap(event) {
   // let veriBoy = 0;
@@ -17,8 +23,6 @@ function hesap(event) {
 
   vki.innerHTML = (veriKilo / (veriBoy * veriBoy)).toPrecision(4);
   //toPrecision(4) belirtilen uzunlukta yazılmış bir sayı ile bir dize döndürür:
-
-
 
   if (+vki.innerHTML > 18.5 && +vki.innerHTML < 24.99) {
     document.getElementById("icerik").style.display = "grid";
@@ -49,6 +53,7 @@ function hesap(event) {
     document
       .getElementById("icerik_başlık")
       .appendChild(document.createTextNode("Şişman (Obez) - I. Sınıf"));
+
     document
       .getElementById("icerik_bilgi")
       .appendChild(
@@ -72,7 +77,9 @@ function hesap(event) {
     document.getElementById("icerik").style.display = "grid";
     document
       .getElementById("icerik_başlık")
-      .appendChild(document.createTextNode("Aşırı Şişman (Aşırı Obez) - III. Sınıf"));
+      .appendChild(
+        document.createTextNode("Aşırı Şişman (Aşırı Obez) - III. Sınıf")
+      );
     document
       .getElementById("icerik_bilgi")
       .appendChild(
@@ -81,7 +88,6 @@ function hesap(event) {
         )
       );
   }
-  document.getElementById("icerik_başlık").appendChild(document.createTextNode(""));
-  document.getElementById("icerik_bilgi").appendChild(document.createTextNode(""));
+
   event.preventDefault();
-};
+}
