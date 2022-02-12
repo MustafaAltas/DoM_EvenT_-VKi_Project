@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./wallpaperbetter.com_1920x1080.jpg" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./27276.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bowlby+One+SC&family=Changa:wght@200&family=Indie+Flower&family=Lato:wght@100;400&family=Lobster+Two&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@500&family=Montserrat:wght@300;400;500&family=Neonderthaw&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Permanent+Marker&family=Raleway:ital,wght@1,300&family=Rubik+Beastly&family=Syne+Tactile&family=Teko:wght@300;700&family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main class="container">
-        <form action="#" class="form">
-            <label for="boy">Boy:</label>
-            <input type="number" name="boy" id="boy">
-            <label for="kilo">Kilo:</label>
-            <input type="number" name="kilo" id="kilo">
-            <input type="submit" value="Hesapla" class="buton" id="hesap">
-        </form>
-        <section class="bilgi">
-            <h4>Vucut Kitle Endeksiniz :</h4>
-            <span id="veri">0</span>
-        </section>
-        <script src="./app.js"></script>
-    </main>
+      <form action="#" class="form">
+        <label for="boy">Boy:</label>
+        <input type="number" name="boy" id="boy" placeholder="(ör: 1.70)" />
+        <label for="kilo">Kilo:</label>
+        <input type="number" name="kilo" id="kilo" placeholder="(ör:70)" />
+        <input type="submit" value="Hesapla" class="buton" id="hesap" />
+      </form>
+      <section class="bilgi">
+        <h4>Vucut Kitle Endeksiniz :</h4>
+        <span id="veri">0</span>
+      </section>
 
-</body>
+      <script src="./app.js"></script>
+    </main>
+    <section id="icerik">
+      <h4 id="icerik_başlık"></h4>
+      <p id="icerik_bilgi"></p>
+    </section>
+  </body>
 </html>
